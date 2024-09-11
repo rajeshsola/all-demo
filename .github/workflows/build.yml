@@ -13,8 +13,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+    - name: cppcheck
+      run: cppcheck --enable=all simple.c
     - name: make all
       run: make all
+    - name: valgrind
+      run: valgrind ./all.out
     #- name: configure
     #  run: ./configure    
     #- name: make check
