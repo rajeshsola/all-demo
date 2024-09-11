@@ -1,7 +1,7 @@
 all : all.out
 
 all.out : simple.o sum.o sqr.o
-	gcc test.o sum.o sqr.o -o all.out
+	gcc simple.o sum.o sqr.o -o all.out
 simple.o : simple.c myutils.h
 	gcc simple.c -c
 sum.o : sum.c myutils.h
