@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
+      with:
+          apt: cppcheck valgrind
     - name: cppcheck
       run: cppcheck --enable=all simple.c
     - name: make all
