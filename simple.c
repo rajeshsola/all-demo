@@ -6,6 +6,6 @@ int main()
   a=10,b=20;  
   c=sum(a,b);
   d=square(a);
-  printf(“c=%d,d=%d\n”,c,d);
+  printf("c=%d,d=%d\n",c,d);
   return 0;
 }
