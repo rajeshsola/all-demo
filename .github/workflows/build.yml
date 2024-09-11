@@ -13,9 +13,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - uses: actions/install-package@v1
-      with:
-          apt: cppcheck valgrind
+    - name : apt packages
+      run: |
+        sudo apt update
+        sudo apt install -y cppcheck valgrind
     - name: cppcheck
       run: cppcheck --enable=all simple.c
     - name: make all
