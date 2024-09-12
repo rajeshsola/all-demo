@@ -18,11 +18,11 @@ jobs:
         sudo apt update
         sudo apt install -y cppcheck valgrind
     - name: cppcheck
-      run: cppcheck --enable=all simple.c
+      run: make cppcheck
     - name: make all
       run: make all
-    - name: valgrind
-      run: valgrind ./all.out
+    - name: memcheck
+      run: make memcheck
     #- name: configure
     #  run: ./configure    
     #- name: make check
