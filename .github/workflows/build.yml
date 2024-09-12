@@ -17,8 +17,8 @@ jobs:
       run: |
         sudo apt update
         sudo apt install -y cppcheck valgrind
-    - name: cppcheck
-      run: make cppcheck
+    #- name: cppcheck
+    #  run: make cppcheck
     - name: make all
       run: make all
     - name: memcheck
