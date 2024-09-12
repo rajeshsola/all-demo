@@ -13,4 +13,4 @@ clean :
 cppcheck:
 	cppcheck  simple.c sum.c sqr.c --error-exitcode=5
 memcheck: all.out
-	valgrind ./all.out
+	valgrind ./all.out -error-exitcode=1
