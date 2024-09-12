@@ -7,7 +7,7 @@ int main()
   c=sum(a,b);
   d=square(a);
   int res = a++ * a++;
-  //int *ptr = malloc(100);
+  int *ptr = malloc(100);
   printf("c=%d,d=%d\n",c,d);
   return 0;
 }
