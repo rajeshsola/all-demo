@@ -11,6 +11,6 @@ sqr.o : sqr.c myutils.h
 clean :
 	rm -rf all.out test.o
 cppcheck:
-	cppcheck --enable=all simple.c sum.c sqr.c
+	cppcheck  simple.c sum.c sqr.c --error-exitcode=5
 memcheck: all.out
 	valgrind ./all.out
