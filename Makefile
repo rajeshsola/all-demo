@@ -10,3 +10,7 @@ sqr.o : sqr.c myutils.h
 	gcc sqr.c -c
 clean :
 	rm -rf all.out test.o
+cppcheck:
+	cppcheck --enable=all simple.c sum.c sqr.c
+memcheck: all.out
+	valgrind ./all.out
