@@ -16,6 +16,6 @@ jobs:
     - name : apt packages
       run: |
         sudo apt update
-        sudo apt install -y cppcheck valgrind
+        sudo apt install -y cppcheck
     - name: cppcheck
       run: make cppcheck
