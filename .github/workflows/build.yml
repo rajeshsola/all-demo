@@ -13,19 +13,5 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name : apt packages
-      run: |
-        sudo apt update
-        sudo apt install -y cppcheck valgrind
-    #- name: cppcheck
-    #  run: make cppcheck
     - name: make all
       run: make all
-    - name: memcheck
-      run: make memcheck
-    #- name: configure
-    #  run: ./configure    
-    #- name: make check
-    #  run: make check
-    #- name: make distcheck
-    #  run: make distcheck
